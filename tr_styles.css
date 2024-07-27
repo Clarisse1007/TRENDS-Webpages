@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+@font-face{
+    font-family: champagne;
+    src: url(cac_champagne.ttf) format(truetype);
+    src: url(cac_champagne.woff) format(woff);
+}
+@font-face{
+    font-family: Dobkin;
+    src: url(DobkinPlain.ttf) format(truetype);
+    src: url(DobkinPlain.woff) format(woff);
+}
+/*
+   New Perspectives 
+   Group Assignment
+   
+   Typographical Style Sheet for the Trends Online Store
+   
+   Filename: tr_styles.css
+
+*/
+html{
+    background-color: rgb(202,226,239);
+}
+body{
+    background-color:white;
+    width: 1024px;
+    float: center;
+}
+nav{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+section>article{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+article{
+    font-family: Verdana,'Time New Roman',sans-serif;
+    padding: 0px;
+    margin: 50px;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+}
+header{
+    background-color: black;
+    float:center;
+}
+header>a{
+    float: center;
+}
+h1{
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+/*Submenus styles*/
+ul{
+    list-style: none;
+    background-color: black;
+}
+ul.submenu{
+    text-align: left;
+    background:transparent;
+    box-shadow: none;
+    display:none;
+    position: absolute;
+    width: 100%;
+}
+.submenuTitle{
+    padding:15px;
+    display:inline-block;
+}
+a.submenuTitle:hover+ul.submenu,ul.submenu:hover{
+    display: block;
+    position: absolute;
+}
+nav.horizontal a.submenuTitle{
+    display:block;
+}
+nav>ul>li>ul.submenu{
+    width: 150px;
+    background-color: black;
+    position: absolute;
+    display: none;
+    padding:10px;
+
+}
+
+/*Footer styles*/
+footer {
+    background-color: black;
+    height: 280px;
+    color: aliceblue;
+}
+
+.navi > a {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.help {
+    font-weight: bold;
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    padding-top:15px;
+}

@@ -1,0 +1,70 @@
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Assignment Web disign
+
+   
+   Clothes selling web site
+   
+   Filename: About us style.css
+   author : Hew Siew Ian
+   
+*/
+html{
+    background-color: #CCEEFF;
+}
+body{
+    background-color:rgba(251, 254, 255, 0.938);
+}
+
+button{
+    float: right;
+    margin-top: -20px;
+    text-decoration: none;
+    
+}
+
+h1{
+    font-weight: normal;
+    font-family: Nobile,Verdana,Geneva,sans-serif;
+    letter-spacing: 0.2em;
+    margin: 0px;
+}
+section#tr_aboutus h1{
+    font-size: 2.5em;
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 94%);
+    padding: 20px;
+}
+
+article h3{
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 12px;
+    height: 85px;
+    margin-right: 30px;
+    font-weight: normal;
+    color: rgb(133, 133, 133);
+    font-family:'Times New Roman', Times, serif;
+}
+aside blockquote{
+    display: flex;
+    font-size: 1.4em;
+    font-family: 'Times New Roman',cursive;
+    background-color: rgb(103, 182, 189);
+    color: rgba(255,255,255,0.75);
+    padding: 10px;
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    color: rgba(255,255,255,0.75);
+    font: normal bold small-caption;
+    font-size: 0.9em ;
+    height: 3em ;
+    font-family: Nobile, Verdana, Geneva, sans-serif;
+    text-align: center;
+}
+
+
+

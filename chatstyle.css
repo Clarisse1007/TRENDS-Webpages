@@ -1,0 +1,100 @@
+/*
+   New Perspectives 
+   Group Assignment
+   
+   Typographical Style Sheet for the Trends Online Store
+   
+   Filename: chatstyle.css
+
+*/
+
+
+.open-button {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background-color: #f8f8f8;
+   color: white;
+   border: none;
+   border-radius: 50%;
+   padding: 10px;
+   cursor: pointer;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.open-button>img {
+   width: 24px;
+   height: 24px;
+}
+
+.chat-popup {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background-color: rgba(255, 255, 255, 0.8);
+   border: 1px solid;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+   padding: 20px;
+   flex-direction: column;
+   height: 40vh;
+   width: 300px;
+}
+
+/*input textbox*/
+.message{
+
+   width:fit-content;
+   padding: 10px;
+   border-radius: 10px;
+   margin-bottom: 15px;
+   background-color: rgba(99, 122, 226, 0.566);
+
+}
+
+
+/*textarea*/
+#container textarea{
+   flex: 1;
+   width: 65%;
+   bottom: 20%;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   border: none;
+   background: #f1f1f1;
+   resize: none;
+   height: 17px;
+   
+}
+
+
+/* Set style for button */
+.btn {
+   position: fixed;
+   background-color: #f8f8f8c2;
+   border: none;
+   padding: 15px;
+   cursor: pointer;
+   bottom: 15%;
+   height: 17px;
+}
+.cancel{
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+   background-color: red;
+   color: white;
+   border: none;
+   border-radius: 50%;
+   padding: 10px;
+   cursor: pointer;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.cancel-button img {
+   width: 24px;
+   height: 24px;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

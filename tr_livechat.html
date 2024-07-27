@@ -1,0 +1,90 @@
+<!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+   Web Design Assignment
+   Case 1
+   
+   Apparel Selling Web Site
+   Author: Hew Siew Ian
+   Date:   15/8/2023
+   
+   Filename: Live Chat
+-->
+<meta charset="utf-8"/>
+<meta name="keywords">
+<title>Trends Online Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="tr_layout.css">
+<link rel="stylesheet" href="tr_styles.css">
+<link rel="stylesheet" href="chatstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="Trends.html"><img src="logo.png" alt="Trends"></a>
+        </div>
+        <nav class="horizontal">
+            <ul class="mainmenu">
+            <li><a href="tr_aboutus.html"class="submenuTitle">About Us</a></li>
+            <li><a href="#"class="submenuTitle">Products &#9654;</a>
+            <ul class="submenu">
+                <li><a href="tr_top.html">Top</a></li>
+                <li><a href="tr_bottom.html">Bottom</a></li>
+                <li><a href="tr_dress.html">Dress</a></li>
+                <li><a href="tr_formalwear.html">Formal Wear</a></li>
+                <li><a href="tr_fashionTrends.html">Fashion Trends</a></li>
+            </ul></li>
+            <li><a href="#"class="submenuTitle">Customer Service &#9654;</a>
+            <ul class="submenu">
+                <li><a href="tr_membership.html">Membership</a></li>
+                <li><a href="tr_FAQ.html">FAQ</a></li>
+                <li><a href="tr_gifts.html">Flowers & Gifts</a></li>
+                <li><a href="tr_feedback.html">Review</a></li>
+            </ul>
+            </li>
+            <li><a href="#"class="submenuTitle">Buy Now &#9654;</a>
+            <ul class="submenu">
+                <li><a href="tr_cart.html">Add to Cart</a></li>
+                <li><a href="tr_payment.html">Payment</a></li>
+                <li><a href="tr_delivery.html">Product Delivery</a></li>
+            </ul
+            ></li>
+        </ul>
+        </nav>
+   
+    </header>
+
+<button class="open-button" onclick="openForm()">
+    <img src="chat-regular-24.png" alt="">
+</button>
+
+<div class="chat-popup" id="Chat-Form">
+    <form action="#" id="container">
+
+    <h1>Live Chat</h1>     
+
+        <p class="message">Hello</p>
+        <p class="message">What can I help you with?</p>
+
+        <textarea id="textarea" placeholder="Type message.." name="msg" required></textarea>
+
+        <button type="submit" class="btn">            
+            <img src="send-regular-24.jpg" alt="" style="width: 12px;">
+        </button>
+    
+        <button type="button" class="cancel" onclick="closeForm()">            
+            <img src="message-square-x-regular-24.jpg" alt="">
+        </button>
+
+        </form>
+</div>
+
+<script>
+    
+function openForm() {
+  document.getElementById("Chat-Form").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("Chat-Form").style.display = "none";
+}

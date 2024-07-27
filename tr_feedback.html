@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<!--
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Web Design Assignment
+   Case 1
+   
+   Apparel Selling Web Site
+   Author: Clarisse Hooi Wai Leng
+   Date:   15/8/2023
+   
+   Filename: Trends.html
+   -->
+<meta charset="utf-8"/>
+<meta name="keywords">
+<title>Trends Online Store</title>
+<link rel="stylesheet" href="tr_layout.css">
+<link rel="stylesheet" href="tr_styles.css">
+<link rel="stylesheet" href="chatstyle.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="Trends.html"><img src="logo.png" alt="Trends"></a>
+        </div>
+        <nav class="horizontal">
+            <ul class="mainmenu">
+            <li><a href="tr_aboutus.html"class="submenuTitle">About Us</a></li>
+            <li><a href="#"class="submenuTitle">Products &#9654;</a>
+            <ul class="submenu">
+                <li><a href="tr_top.html">Top</a></li>
+                <li><a href="tr_bottom.html">Bottom</a></li>
+                <li><a href="tr_dress.html">Dress</a></li>
+                <li><a href="tr_formalwear.html">Formal Wear</a></li>
+                <li><a href="tr_fashionTrends.html">Fashion Trends</a></li>
+            </ul></li>
+            <li><a href="#"class="submenuTitle">Customer Service &#9654;</a>
+            <ul class="submenu">
+                <li><a href="tr_membership.html">Membership</a></li>
+                <li><a href="tr_FAQ.html">FAQ</a></li>
+                <li><a href="tr_gifts.html">Flowers & Gifts</a></li>
+                <li><a href="tr_feedback.html">Review</a></li>
+            </ul>
+            </li>
+            <li><a href="#"class="submenuTitle">Buy Now &#9654;</a>
+            <ul class="submenu">
+                <li><a href="tr_cart.html">Add to Cart</a></li>
+                <li><a href="tr_payment.html">Payment</a></li>
+                <li><a href="tr_delivery.html">Product Delivery</a></li>
+            </ul
+            ></li>
+        </ul>
+        </nav>
+   
+    </header>
+
+<article>
+    <form method="post" name="review" onsubmit="return checkform()" onreset="location.reload()" action="tr_feedback.html">
+        <fieldset id="custInfo">
+            <legend>Customer Feedback</legend>
+            <label for="custName">Customer Name</label>
+            <input name="custName" id ="name" type="text" placeholder="Jasmine" required/><br/>
+            <label for="email">Email</label>
+            <input name="custEmail" id="email" type="text" placeholder="jasmine@gmail.com"required/><br/>
+            <label for="custReview">Review</label>
+            <textarea rows="5" cols="10"name="custReview" id="review"type="text" placeholder="Review"required>
+            </textarea>
+        </fieldset>
+        <div class="formRow">
+            <label for="rangeBox">Please rate our overall service<br/>
+                (0=poor;10=great)</label>
+                0
+                <input name="serviceRate" id="rangeBox" type="range"
+                value="5"step="1"min="0"max="10"/>
+                10
+        </div>
+        <div name="buttons">
+            <input type="submit"value="Submit My Review" onSubmit="return checkfom()" action="tr_feedback.html"/>
+            <input type="reset"value="Cancel" onclick="confirm('Cancel Review')"/>
+        </div>
+    </form>
+</article>
+
+<button class="open-button" onclick="openForm()">
+    <img src="Live Chat.png" alt="">
+    </button>
+    
+    <div class="chat-popup" id="Chat-Form">
+        <form action="#" id="container">
+    
+        <h1>Live Chat</h1>     
+    
+            <p class="message">Hello</p>
+            <p class="message">What can I help you with?</p>
+    
+            <textarea id="textarea" placeholder="Type message.." name="msg" required></textarea>
+    
+            <button type="submit" class="btn">            
+                <img src="send-regular-24.jpg" alt="" style="width: 12px;">
+            </button>
+        
+            <button type="button" class="cancel" onclick="closeForm()">            
+                <img src="message-square-x-regular-24.jpg" alt="">
+            </button>
+    
+            </form>
+    </div>
+    
+    <script>
+        
+    function openForm() {
+      document.getElementById("Chat-Form").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("Chat-Form").style.display = "none";
+    }
+    </script>
+
+Trends &#9819; Kampar,Perak &nbsp;31900 &#9819;05-4635874
+
+<script src="review.js"></script>
+</body>
+<footer>  
+    <nav class="navi">
+        <p class="help">HELP</p>
+        <a href="tr_aboutus.html">About Us</a>
+        <a href="tr_feedback.html">Customer Feedback & Review</a>
+        <a href="tr_FAQ.html">FAQ</a>
+        <a href="tr_payment.html">Payment</a>
+     </nav>
+</footer>
+
+</html>
